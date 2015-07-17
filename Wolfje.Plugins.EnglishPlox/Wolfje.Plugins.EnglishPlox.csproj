@@ -38,10 +38,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="TerrariaServer">
-      <HintPath>..\..\Wolfje.Plugins\BuildReferences\TerrariaServer\APIVersion1.15\TerrariaServer.exe</HintPath>
+      <HintPath>..\..\..\..\..\CubiV\References\TerrariaServer.exe</HintPath>
     </Reference>
     <Reference Include="TShockAPI">
-      <HintPath>..\..\Wolfje.Plugins\BuildReferences\TShock\APIVersion1.16\TShockAPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\CubiV\References\TShockAPI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

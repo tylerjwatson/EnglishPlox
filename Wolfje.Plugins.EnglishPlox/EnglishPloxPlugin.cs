@@ -9,7 +9,7 @@ using Terraria;
 using TerrariaApi;
 
 namespace Wolfje.Plugins.EnglishPlox {
-    [TerrariaApi.Server.ApiVersion(1, 16)]
+    [TerrariaApi.Server.ApiVersion(1, 19)]
     public class EnglishPloxPlugin : TerrariaApi.Server.TerrariaPlugin {
         public static readonly Regex invalidCharactersRegex = new Regex(@"[^\da-z!@#\$%\^\&\*\(\)\-\+~ ;{}|\[\]:\.,_`]", RegexOptions.IgnoreCase);
 
@@ -57,7 +57,7 @@ namespace Wolfje.Plugins.EnglishPlox {
                 foreach (Match m in invalidCharactersRegex.Matches(player.name)) {
                     sb.Append(m.Value);
                 }
-                Terraria.NetMessage.SendData((int)PacketTypes.Disconnect, player.whoAmi, text: "Your name cannot contain these characters: " + sb.ToString());
+                Terraria.NetMessage.SendData((int)PacketTypes.Disconnect, player.whoAmI, text: "Your name cannot contain these characters: " + sb.ToString());
             }
         }
 
