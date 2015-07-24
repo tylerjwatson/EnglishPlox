@@ -37,11 +37,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TerrariaServer">
-      <HintPath>..\..\..\..\..\CubiV\References\TerrariaServer.exe</HintPath>
-    </Reference>
-    <Reference Include="TShockAPI">
-      <HintPath>..\..\..\..\..\CubiV\References\TShockAPI.dll</HintPath>
+    <Reference Include="TerrariaServer, Version=1.15.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ServerInstance4.3\TerrariaServer.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
